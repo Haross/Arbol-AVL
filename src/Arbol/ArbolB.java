@@ -144,17 +144,11 @@ public class ArbolB {
         return node;
     }
  
-    /* Given a non-empty binary search tree, return the node with minimum
-     dato value found in that tree. Note that the entire tree does not
-     need to be searched. */
     public Nodo minimoDerecho(Nodo node) {
         Nodo current = node;
- 
-        /* loop down to find the izqmost leaf */
         while (current.izq != null) {
             current = current.izq;
         }
- 
         return current;
     }
 
