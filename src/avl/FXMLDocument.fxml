@@ -6,15 +6,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="423.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="avl.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="516.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="avl.FXMLDocumentController">
    <children>
       <Button layoutX="289.0" layoutY="65.0" mnemonicParsing="false" onAction="#insertar" text="Insertar" />
       <TextField fx:id="txtInsertar" layoutX="60.0" layoutY="65.0" prefHeight="25.0" prefWidth="212.0" />
-      <Label layoutX="60.0" layoutY="147.0" text="Movimientos realizados" />
-      <TextArea fx:id="txtMovimientos" layoutX="54.0" layoutY="175.0" prefHeight="81.0" prefWidth="305.0" />
-      <Button layoutX="186.0" layoutY="432.0" mnemonicParsing="false" onAction="#showArbol" text="Ver árbol" />
-      <Label layoutX="54.0" layoutY="306.0" text="Preorder" />
-      <TextArea fx:id="txtPre" layoutX="54.0" layoutY="333.0" prefHeight="57.0" prefWidth="305.0" />
+      <Label layoutX="37.0" layoutY="148.0" text="Movimientos realizados" />
+      <TextArea fx:id="txtMovimientos" layoutX="31.0" layoutY="175.0" prefHeight="119.0" prefWidth="357.0" />
+      <Button layoutX="189.0" layoutY="458.0" mnemonicParsing="false" onAction="#showArbol" text="Ver árbol" />
+      <Label layoutX="37.0" layoutY="306.0" text="Preorder" />
+      <TextArea fx:id="txtPre" layoutX="31.0" layoutY="333.0" prefHeight="90.0" prefWidth="357.0" />
       <TextField fx:id="txtEliminar" layoutX="60.0" layoutY="105.0" prefHeight="25.0" prefWidth="212.0" />
       <Button layoutX="289.0" layoutY="104.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
    </children>
