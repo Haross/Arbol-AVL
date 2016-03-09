@@ -76,7 +76,7 @@ public class ArbolGrafico extends JPanel {
           center = right - rd.width - child2child/2;
       else if (left != Integer.MAX_VALUE)
           center = left + ld.width + child2child/2;
-      int width = fm.stringWidth("dato: "+ n.dato +"frecuencia: "+n.dato); 
+      int width = fm.stringWidth(" "+ n.dato +" F.E.= "+n.dato); 
   
       
  
@@ -98,7 +98,7 @@ public class ArbolGrafico extends JPanel {
      Rectangle r = (Rectangle) posicionNodos.get(n);
      g.draw(r);
   
-        g.drawString("dato: "+n.dato+" frecuencia:" +n.fe, r.x + 3, r.y + yoffs);
+        g.drawString(" "+n.dato+" F.E.= " +n.fe, r.x+3, r.y + yoffs);
      
      if (puntox != Integer.MAX_VALUE)
        

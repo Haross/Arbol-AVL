@@ -38,7 +38,7 @@ public class FXMLDocumentController implements Initializable {
             arbol.insertar(numero);
               arbol.preorder();
         }
-      
+      txtInsertar.setText("");
        
     }
  
@@ -67,7 +67,7 @@ public class FXMLDocumentController implements Initializable {
             arbol.eliminar(numero);
              arbol.preorder();
         }
-      
+      txtEliminar.setText("");
     }
     
     @Override
