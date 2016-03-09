@@ -8,7 +8,7 @@ import javafx.scene.control.TextArea;
 public class ArbolB {
    
     TextArea txtPre,txtMovimientos;
-     Nodo raiz;
+     Nodo raiz = null;
      public ArbolB(TextArea txtPre,TextArea txtMovimientos){
           this.txtPre = txtPre;
          this.txtMovimientos = txtMovimientos;
@@ -153,14 +153,19 @@ public class ArbolB {
     }
 
     public void eliminar(int dato){
+        if(raiz!= null)
         txtMovimientos.setText(txtMovimientos.getText() + "\n--------Eliminación numero: "+dato+"----");
-       raiz = eliminarBalanceado(raiz,dato);
+      else
+            txtMovimientos.setText(" ");
+        raiz = eliminarBalanceado(raiz,dato);
+       imprimirFE();
     }
  
     public Nodo eliminarBalanceado(Nodo raiz, int dato) {
  
        
         if (raiz == null) {
+            
             return raiz;
         }
  
